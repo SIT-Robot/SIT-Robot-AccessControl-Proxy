@@ -66,6 +66,3 @@ class DataBase:
         values = (c_no, name, create_time, s_id)
         self.execute(sql, values)
 
-# database = DataBase()
-# database.connect()
-# database.add_user('1910200427', '0291EE5C', '车嘉宁')

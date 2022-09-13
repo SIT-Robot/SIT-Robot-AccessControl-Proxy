@@ -1,6 +1,6 @@
 import mitmproxy.http
 from mitmproxy import ctx
-from DataBase import *
+from database import *
 
 
 @Singleton
