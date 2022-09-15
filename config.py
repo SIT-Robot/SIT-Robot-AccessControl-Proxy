@@ -14,6 +14,7 @@ class DatabaseConfig:
 class LockConfig:
     card_id: str
     mac_id: str
+    base_url: str
 
 
 @dataclass
@@ -23,7 +24,7 @@ class Config:
 
 
 __all__ = [
-    DatabaseConfig,
-    LockConfig,
-    Config,
+    "DatabaseConfig",
+    "LockConfig",
+    "Config",
 ]
