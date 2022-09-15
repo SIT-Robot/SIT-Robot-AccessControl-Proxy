@@ -10,6 +10,7 @@ default_config = Config(
     ),
     lock=LockConfig(
         card_id='515FF572',
-        mac_id='28:52:F9:18:84:67'
+        mac_id='28:52:F9:18:84:67',
+        base_url='http://210.35.98.178:7101/LMWeb/WebApi'
     ),
 )
