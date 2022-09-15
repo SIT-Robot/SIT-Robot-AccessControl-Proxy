@@ -1,22 +1,12 @@
 import datetime
 import pymysql
+from util import Singleton
 
 host = '101.43.65.22'
 port = 8978
 user = 'root'
 passwd = 'rootroot'
 db = 'opendoor'
-
-
-class Singleton(object):
-    def __init__(self, cls):
-        self._cls = cls
-        self._instance = {}
-
-    def __call__(self):
-        if self._cls not in self._instance:
-            self._instance[self._cls] = self._cls()
-        return self._instance[self._cls]
 
 
 @Singleton
@@ -73,3 +63,7 @@ class DataBase:
         values = (c_no, name, create_time, s_id)
         self.execute(sql, values)
 
+
+__all__ = [
+    DataBase,
+]
