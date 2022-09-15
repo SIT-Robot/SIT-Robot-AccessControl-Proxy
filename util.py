@@ -11,5 +11,5 @@ class Singleton(object):
 
 # 指明util模块中需要导出的对象
 __all__ = [
-    Singleton,
+    "Singleton",
 ]
