@@ -26,6 +26,7 @@ class LockUrlBuilder:
 
 def build_shuaka_liu_cheng_url_by_config(config: LockConfig):
     builder = LockUrlBuilder()
+    builder.base_url = config.base_url
     builder.card_id = config.card_id
     builder.mac_id = config.mac_id
     builder.method = 'ShuaKaLiuCheng'
@@ -34,6 +35,7 @@ def build_shuaka_liu_cheng_url_by_config(config: LockConfig):
 
 def build_remote_open_door_url_by_config(config: LockConfig):
     builder = LockUrlBuilder()
+    builder.base_url = config.base_url
     builder.card_id = config.card_id
     builder.mac_id = config.mac_id
     builder.method = 'SaveRemoteOpenDoor'
@@ -42,7 +44,7 @@ def build_remote_open_door_url_by_config(config: LockConfig):
 
 
 __all__ = [
-    build_shuaka_liu_cheng_url_by_config,
-    build_remote_open_door_url_by_config,
-    LockUrlBuilder,
+    "build_shuaka_liu_cheng_url_by_config",
+    "build_remote_open_door_url_by_config",
+    "LockUrlBuilder",
 ]
