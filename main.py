@@ -1,6 +1,6 @@
 import mitmproxy.http
 from mitmproxy import ctx
-from database import DataBase
+from database import Database
 from util import Singleton
 
 
@@ -8,7 +8,7 @@ from util import Singleton
 class Control:
 
     def __init__(self):
-        self.__db = DataBase()
+        self.__db = Database()
         # 转发映射，可添加新的映射
         self.__method_to_url_map = {
             'ShuaKaLiuCheng': 'http://210.35.98.178:7101//LMWeb/WebApi/HCommon.ashx?KaHao=515FF572&MacID=28'

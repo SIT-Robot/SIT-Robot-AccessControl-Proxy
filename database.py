@@ -10,7 +10,7 @@ db = 'opendoor'
 
 
 @Singleton
-class DataBase:
+class Database:
     def __init__(self):
         self.__conn = None
         self.__cursor = None
@@ -65,5 +65,5 @@ class DataBase:
 
 
 __all__ = [
-    DataBase,
+    Database,
 ]
