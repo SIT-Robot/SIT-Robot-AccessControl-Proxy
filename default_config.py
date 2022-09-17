@@ -1,16 +1,3 @@
-from config import *
+from util import JsonDecodeToConfig
 
-default_config = Config(
-    database=DatabaseConfig(
-        host='101.43.65.22',
-        port=8978,
-        username='root',
-        password='rootroot',
-        db='opendoor',
-    ),
-    lock=LockConfig(
-        card_id='515FF572',
-        mac_id='28:52:F9:18:84:67',
-        base_url='http://210.35.98.178:7101/LMWeb/WebApi'
-    ),
-)
+default_config = JsonDecodeToConfig("configuration.json")
